@@ -10,13 +10,13 @@
 	<header>
 		<div class="col-xs-3">
 			<div class="circle">
-		        <br />
-		        Be Happy
-		        <br />
-		       	Think Happy
-		        <br />
-		        Feel Happy
-      		</div>
+        <br />
+        Be Happy
+        <br />
+       	Think Happy
+        <br />
+        Feel Happy
+  		</div>
     </div>
 		</div>
 		<div class="col-xs-4 slogan">
@@ -31,7 +31,23 @@
 	<hr />
 
 	<br class="clear" />
-<%= yield %>
+
+	<div class="container">
+		<%= yield %>
+	</div>
+
+  <div class="footer">
+    <div class="container">
+     <div class="col-xs-6">
+     	<%= link_to "This isn't enough, I need more", "#", :class => "next-quote" %>
+     </div><!-- col -->
+     <div class="col-xs-6 footer-blurb">
+     		Gathered happy quotes from amazing people
+     		like you
+     </div><!-- container -->
+    </div><!-- container -->
+  </div><!-- footer -->
 
 </body>
 </html>
+	
