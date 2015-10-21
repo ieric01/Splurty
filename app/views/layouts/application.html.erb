@@ -9,7 +9,7 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-      <%= link_to root_path do %>
+      <%= link_to root_path, :class => 'logo' do %>
   			<div class="circle">
           <br />
           Be Happy
@@ -40,7 +40,7 @@
   <div class="footer">
     <div class="container">
      <div class="col-xs-6">
-     	<%= link_to "This isn't enough, I need more", "#", :class => "next-quote" %>
+     	<%= link_to "This isn't enough, I need more", root_path, :class => "next-quote" %>
      </div><!-- col -->
      <div class="col-xs-6 footer-blurb">
      		Gathered happy quotes from amazing people
