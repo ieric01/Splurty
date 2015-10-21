@@ -1,25 +1,26 @@
+
 .clear {
 	clear:both;
 }
 
 .circle {
-    font-weight:bold;
-    font-style: italic;
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 10px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+  font-weight:bold;
+  font-style: italic;
+  position: relative;
+  border-radius: 100%;
+  background: #f84342;
+  border: 1px solid #F7F7F7;
+  width: 80px;
+  height: 80px;
+  margin: 10px 10px;
+  text-align: center;
+  color: #FFF;
+  font-size: 10px;
+  line-height: 16px;
+  cursor: pointer;
+  transform:rotate(11deg);
+  -ms-transform:rotate(11deg); /* IE 9 */
+  -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
 }
 
 .slogan {
@@ -36,6 +37,8 @@
 	color:black;
 	font-size:25px;
 	border-bottom: 1px solid #dfdfdf;
+  font-family: 'robotoregular', sans-serif;  
+  font-weight: bold;
 
 }
 
@@ -46,3 +49,14 @@ header {
 hr {
   clear:both;
 }
+
+h1 {
+font-family: 'robotoregular', sans-serif;
+font-weight: bold;
+font-size: 48px;
+}
+
+h2 {
+font-family: 'robotomedium_italic', sans-serif;
+}
+
