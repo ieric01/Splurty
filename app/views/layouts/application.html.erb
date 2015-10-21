@@ -9,21 +9,22 @@
 <body>
 	<header>
 		<div class="col-xs-3">
-			<div class="circle">
-        <br />
-        Be Happy
-        <br />
-       	Think Happy
-        <br />
-        Feel Happy
-  		</div>
+      <%= link_to root_path do %>
+  			<div class="circle">
+          <br />
+          Be Happy
+          <br />
+         	Think Happy
+          <br />
+          Feel Happy
+    		</div>
+      <% end %>
     </div>
-		</div>
 		<div class="col-xs-4 slogan">
 			Splurting out happy quotes since I was born
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
