@@ -20,13 +20,14 @@
     		</div>
       <% end %>
     </div>
-		<div class="col-xs-4 slogan">
+		<div class="col-xs-4 hidden-xs slogan">
 			Splurting out happy quotes since I was born
 		</div>
-		<div class="col-xs-5 links">
+		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5  links">
           <!-- Button trigger modal -->
       <%= link_to 'Contribute', '#', :data => {:toggle => 'modal',
         :target => '#myModal'} %>
+         &nbsp;&nbsp;
 			<%= link_to 'About', about_path %>
 		</div>
 	</header>
@@ -42,8 +43,9 @@
         </div>
         <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, :label => "What is the saying you want to add?", :placeholder => "Happiness is never stopping to think if you are" %>
+            <br />
+            <%= f.input :author, :label => "Who is the author of the quote?", :placeholder => "Palmer Sondreal" %>
             <br/>
           </div> <!-- end of modal-body -->
           <div class="modal-footer">
@@ -71,10 +73,10 @@
 
   <div class="footer">
     <div class="container">
-     <div class="col-xs-6">
+     <div class="col-xs-12 col-sm-6">
      	<%= link_to "This isn't enough, I need more", root_path, :class => "next-quote" %>
      </div><!-- col -->
-     <div class="col-xs-6 footer-blurb">
+     <div class="col-xs-12 col-sm-6 footer-blurb">
      		Gathered happy quotes from amazing people
      		like you
      </div><!-- container -->
