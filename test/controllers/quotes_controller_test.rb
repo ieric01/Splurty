@@ -17,8 +17,9 @@ class QuotesControllerTest < ActionController::TestCase
     post :create, :quote => 
       quote.attributes
     assert_redirected_to root_path
-    quote_saying = Quote.last.saying
-    assert_equal quote_saying, quote.saying
+    quote_saying = Quote.last
+    assert_equal "I love people, and the hustle", quote.saying
+    assert_equal "Gary Vaynerchuk", quote.author
   end
 
   test "create a quote validation error"do
